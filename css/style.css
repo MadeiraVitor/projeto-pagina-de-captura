@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cabecalho{
+    background-color: #48C5CE;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.cabecalho h1{
+    font-size: 26px;
+}
+
+.principal{
+    padding: 20px;
+    background-image: url(../images/people.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formcontainer{
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+
+.formcontainer h2{
+    font-size: 16px;
+}
+
+.mb{
+    margin-bottom: 15px;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: #48C5CE;
+    font-weight: bold;
+}
+
+select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+.rodape{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+
+.picture{
+    width: 160px;
+}
+
+.description{
+    color: white;
+    display: inline-block;
+    max-width: 40%;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.description h3, p{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 426px){
+    .formcontainer{
+        float: none;
+        margin: auto;
+    }
+
+    .picture{
+        display: block;
+        margin: auto;
+    }
+
+    .description{
+        margin: 40px 0;
+        max-width: 100%;
+        text-align: center;
+    }
+}
